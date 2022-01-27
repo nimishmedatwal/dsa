@@ -18,5 +18,7 @@ int main(){
         cin>>arr[i].name;
         cin>>arr[i].age;
         cin>>arr[i].gender;
+        arr[i].printinfo();
     }
+    return 0;
 }
