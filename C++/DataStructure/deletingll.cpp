@@ -41,6 +41,13 @@ void deletion(node* &head, int val){
     delete todelete;
 
 }
+void deletehead(node* &head){
+    node* todelete = head->next;
+    head=head->next;
+    delete todelete;
+    
+    
+}
 int main(){
     node*head =NULL;
     inserttail(head,1);
