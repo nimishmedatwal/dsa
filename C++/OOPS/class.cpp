@@ -5,20 +5,22 @@ class student{
     string name;
     int age;
     bool gender;
+    student(string s,int a , int g){
+        name=s;
+        age=a;
+        gender=g;
+
+    }
     void printinfo(){
         cout<<"Name : "<<name<<endl;
         cout<<"Age :" <<age<<endl;
         cout<<"Gender : "<<gender<<endl;
     }
+
 };
 int main(){
 
-    student arr[3];
-    for (int i=0;i<3;i++){
-        cin>>arr[i].name;
-        cin>>arr[i].age;
-        cin>>arr[i].gender;
-        arr[i].printinfo();
-    }
+    student a("Nimish",18,0);
+    
     return 0;
 }
