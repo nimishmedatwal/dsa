@@ -8,7 +8,8 @@ int add(int n ){
     return sum;
 }
 int main(){
-    cout<<add(10);
+    int s=add(10);
+    cout<<s;
     return 0;
     
 }
