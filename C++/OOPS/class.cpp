@@ -21,6 +21,7 @@ class student{
 int main(){
 
     student a("Nimish",18,0);
-    
+    student c=a;
+    c.printinfo();
     return 0;
 }
