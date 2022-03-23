@@ -4,12 +4,11 @@ class student{
     public:
     string name;
     int age;
-    bool gender;
+    string gender;
     student(string s,int a , int g){
         name=s;
         age=a;
         gender=g;
-
     }
     void printinfo(){
         cout<<"Name : "<<name<<endl;
@@ -24,4 +23,4 @@ int main(){
     student c=a;
     c.printinfo();
     return 0;
-}
+    }
