@@ -4,7 +4,6 @@ using namespace std;
 class A
 {
     int i;
-
 public:
     A() { i = 10; }
     void show() { cout << "i = " << i << endl; }
