@@ -1,5 +1,5 @@
 let he  = document.querySelector('button');
-he.addEventListener('click',input);
+he.addEventListener('DOMContentLoaded',input);
 function input(){
     let name = prompt("Enter name of student");
     // let roll= promt("enter roll number ");
