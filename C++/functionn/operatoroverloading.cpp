@@ -13,7 +13,6 @@ class Complex {
             Complex res;
             res.real=real+obj.real;
             res.imag=imag+obj.imag;
-            cout<<real<<"  "<<obj.real;
             return res;
         }
         void print(){
