@@ -3,7 +3,15 @@
 using namespace std;
 int main()
 {
-    ofstream hello("Simplefile.txt");
-    hello << "Hua hua  hoo";
-    hello.close();
+    char ch;
+    ifstream fin("MySecrets.txt");
+    ofstream fout("CopyMySecrets.txt");
+    while (!fin.eof())
+    {
+        fin.get(ch);
+        fout << ch;
+        cout << ch << ".";
+    }
+    fin.close();
+    fout.close();
 }
