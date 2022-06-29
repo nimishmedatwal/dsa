@@ -8,7 +8,6 @@ int main(){
     for (int i=0;i<3;i++){
         for (int j=i+1;j<4 ; j++){
             temp=(arr[i]^arr[j]);
-            
         }
     return ans;
 }
