@@ -21,4 +21,5 @@ int main()
         cout << p/gc << "/" << q/gc<<endl;
     }
     return 0;
+    
 }
