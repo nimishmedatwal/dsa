@@ -20,7 +20,6 @@ int main() {
 		if(n>1500000)
 			tax += ( (n-1500000)*30 )/100;
 		cout<<n-tax<<'\n';
-	}
-    
+	}    
 	return 0;
 }
