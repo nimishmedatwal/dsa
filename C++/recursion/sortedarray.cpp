@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 bool sort(int arr[],int n){
-    if (n==2 && arr[0]<arr[1]){
+    if (n==1){
         return true;
     }
     int rest= sort(arr+1,n-1);
