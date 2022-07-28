@@ -8,7 +8,7 @@ int sum(int n){
     return n+prevsum;
 }
 int main(){
-    int n=3;
+    int n=34
     cout<<sum(n);
 
 }

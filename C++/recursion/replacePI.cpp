@@ -15,6 +15,6 @@ void replace(string s){
     }
 }
 int main(){
-    replace("pisdpsdfpisdfsddfspisdfsdfpipi");
+    replace("pisdpsdfpisdfsddfspidsdfsdfpipi");
     return 0;
 }

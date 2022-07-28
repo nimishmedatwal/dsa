@@ -47,7 +47,7 @@ int main(){
     inserttail(head,1);
     inserttail(head,2);
     inserttail(head,3);
-    inserttail(head,5);
+    inserttail(head,4);
     display(head);
     node* newhead=reverse(head);
     display(newhead);

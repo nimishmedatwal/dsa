@@ -49,5 +49,5 @@ class queue {
 
 };
 int main(){
-
+    int a;
 }

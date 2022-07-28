@@ -10,7 +10,5 @@ void reverse(string s){
 }
 
 int main(){
-    string a="Nimish";
-    reverse(a);
-    return 0;
+ 
 }

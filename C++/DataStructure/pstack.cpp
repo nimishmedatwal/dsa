@@ -45,7 +45,7 @@ int main(){
     cout<<st.Top()<<endl;
     st.push("3");
     cout<<st.Top()<<endl;
-    st.push("4");
+    st.push("5");
     cout<<st.Top()<<endl;
     st.pop();
     cout<<st.Top()<<endl;
