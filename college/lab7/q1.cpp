@@ -7,9 +7,7 @@ struct linkedlist
 };
 typedef struct linkedlist node;
 node *head = NULL, *temp;
-(memoory address)
- 
-    val until assigned;
+
 void create()
 {
     cout << "Enter value" << endl;
