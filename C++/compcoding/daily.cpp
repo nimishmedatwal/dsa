@@ -27,7 +27,6 @@ int main()
                 c++;
             if (a[54 - j * 2 - 2] == '0')
                 c++;
-
             if (c >= n)
             {
                 result++;
