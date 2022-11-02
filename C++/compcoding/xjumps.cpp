@@ -37,9 +37,9 @@ int ceil(int a, int b)
 
 void solve()
 {
-   int x,y;
-   cin>>x>>y;
-   cout<<(y/x)+(y%x);
+    int x, y;
+    cin >> x >> y;
+    cout << (x / y) + (x % y);
 }
 
 int main()
