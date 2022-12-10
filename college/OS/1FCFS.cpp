@@ -1,34 +1,42 @@
 // first come first serve
 #include <bits/stdc++.h>
 using namespace std;
+struct Process
+{
+    int pid;
+    int bt;
+    int at;
+};
 int main()
 {
     int n;
-    cout << "Enter the number of processes: ";
+    cout << "Enter number of Process :";
     cin >> n;
-    int at[n], bt[n], ct[n], tat[n], wt[n];
-    cout << "Enter the arrival time and burst time of the processes: " << endl;
+    Process proc[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> at[i] >> bt[i];
-    }
-    ct[0] = at[0] + bt[0];
-    for (int i = 1; i < n; i++)
-    {
-        ct[i] = ct[i - 1] + bt[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
-        tat[i] = ct[i] - at[i];
+        cout << "Enter Process ID: ";
+        cin >> proc[i].pid;
+        cout << "Enter burst time: ";
+        cin >> proc[i].bt;
+        cout << "Enter arrival time: ";
+        cin >> proc[i].at;
     }
     for (int i = 0; i < n; i++)
     {
-        wt[i] = tat[i] - bt[i];
+        for (int j = i + 1; j < n; j++)
+        {
+            if (proc[i].at > proc[j].at)
+            {
+                swap(proc[i], proc[j]);
+            }
+        }
     }
-    cout << "Process\tAT\tBT\tCT\tTAT\tWT" << endl;
+    int sum = 0;
+    cout << "Process\tAT\tBT\tTAT\tWT" << endl;
     for (int i = 0; i < n; i++)
     {
-        cout << i + 1 << "\t" << at[i] << "\t" << bt[i] << "\t" << ct[i] << "\t" << tat[i] << "\t" << wt[i] << endl;
+        cout << proc[i].pid << "\t" << proc[i].at << "\t" << proc[i].bt << "\t" << sum + proc[i].bt << "\t" << sum << endl;
+        sum += proc[i].bt;
     }
-    return 0;
 }
